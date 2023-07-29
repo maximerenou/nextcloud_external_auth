@@ -16,5 +16,8 @@
 		"nextcloud/coding-standard": "^1.0.0",
 		"phpunit/phpunit": "^9.5",
 		"christophwurst/nextcloud_testing": "^0.12.4"
+	},
+	"require": {
+		"freedsx/ldap": "^0.8.0"
 	}
 }

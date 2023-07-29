@@ -4,8 +4,292 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "873fdd7ab6fbab5d42b54237eec0d841",
-    "packages": [],
+    "content-hash": "69f65c217faf1253b70d98fca4017166",
+    "packages": [
+        {
+            "name": "freedsx/asn1",
+            "version": "0.4.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FreeDSx/ASN1.git",
+                "reference": "aea7159cb82f6567143db4ba6fd119e8f791c3fb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FreeDSx/ASN1/zipball/aea7159cb82f6567143db4ba6fd119e8f791c3fb",
+                "reference": "aea7159cb82f6567143db4ba6fd119e8f791c3fb",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "friends-of-phpspec/phpspec-code-coverage": "^4.3|^6.1",
+                "phpspec/phpspec": "^5.1|^6.1|^7.1",
+                "phpstan/phpstan": "^0.11.15|^0.12",
+                "slevomat/coding-standard": "~7.0",
+                "squizlabs/php_codesniffer": "3.*",
+                "symplify/easy-coding-standard": "^6.1|^7.3|^9.0"
+            },
+            "suggest": {
+                "ext-gmp": "For big integer support in Integer/Enumerated/OID types and tag numbers."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FreeDSx\\Asn1\\": "src/FreeDSx/Asn1"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chad Sikorra",
+                    "email": "Chad.Sikorra@gmail.com"
+                }
+            ],
+            "description": "An ASN.1 library for PHP.",
+            "homepage": "https://github.com/FreeDSx/ASN1",
+            "keywords": [
+                "DER",
+                "asn.1",
+                "asn1",
+                "ber",
+                "x.690"
+            ],
+            "support": {
+                "issues": "https://github.com/FreeDSx/ASN1/issues",
+                "source": "https://github.com/FreeDSx/ASN1/tree/0.4.7"
+            },
+            "time": "2023-06-06T16:47:22+00:00"
+        },
+        {
+            "name": "freedsx/ldap",
+            "version": "0.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FreeDSx/LDAP.git",
+                "reference": "98cf7abe6762cd8062bde6f0bbd9bd8364e7d52a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FreeDSx/LDAP/zipball/98cf7abe6762cd8062bde6f0bbd9bd8364e7d52a",
+                "reference": "98cf7abe6762cd8062bde6f0bbd9bd8364e7d52a",
+                "shasum": ""
+            },
+            "require": {
+                "freedsx/asn1": "^0.4.0",
+                "freedsx/sasl": "^0.1.0",
+                "freedsx/socket": "^0.5.2",
+                "php": ">=7.1",
+                "psr/log": "^1|^2|^3"
+            },
+            "require-dev": {
+                "friends-of-phpspec/phpspec-code-coverage": "^4.3|^6.1|dev-master",
+                "phpspec/phpspec": "^7.2|^7.1|^6.1|^5.1",
+                "phpstan/phpstan": "^0.12.70",
+                "phpunit/phpunit": "^9.3|^8.0|^7.0",
+                "slevomat/coding-standard": "~7.0",
+                "squizlabs/php_codesniffer": "3.*",
+                "symfony/process": "^3.0|^4.0|^5.0",
+                "symplify/easy-coding-standard": "^6.1|^7.3|^9.0"
+            },
+            "suggest": {
+                "ext-openssl": "For SSL/TLS support and some SASL mechanisms.",
+                "ext-pcntl": "For LDAP server functionality."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FreeDSx\\Ldap\\": "src/FreeDSx/Ldap"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chad Sikorra",
+                    "email": "Chad.Sikorra@gmail.com"
+                }
+            ],
+            "description": "A Pure PHP LDAP library",
+            "homepage": "https://github.com/FreeDSx/LDAP",
+            "keywords": [
+                "activedirectory",
+                "ldap",
+                "openldap"
+            ],
+            "support": {
+                "issues": "https://github.com/FreeDSx/LDAP/issues",
+                "source": "https://github.com/FreeDSx/LDAP/tree/0.8.0"
+            },
+            "time": "2022-05-21T19:17:54+00:00"
+        },
+        {
+            "name": "freedsx/sasl",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FreeDSx/SASL.git",
+                "reference": "baffafed1a46bd6c28257bf5f8893df0663b158b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FreeDSx/SASL/zipball/baffafed1a46bd6c28257bf5f8893df0663b158b",
+                "reference": "baffafed1a46bd6c28257bf5f8893df0663b158b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "phpstan/phpstan": "^0.11.12",
+                "phpunit/phpunit": "^7.0",
+                "symplify/easy-coding-standard": "^6.1"
+            },
+            "suggest": {
+                "ext-openssl": "Needed for encryption for certain mechanisms."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FreeDSx\\Sasl\\": "src/FreeDSx/Sasl"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chad Sikorra",
+                    "email": "Chad.Sikorra@gmail.com"
+                }
+            ],
+            "description": "A Pure PHP SASL Library",
+            "homepage": "https://github.com/FreeDSx/SASL",
+            "keywords": [
+                "CRAM-MD5",
+                "DIGEST-MD5",
+                "sasl"
+            ],
+            "support": {
+                "issues": "https://github.com/FreeDSx/SASL/issues",
+                "source": "https://github.com/FreeDSx/SASL/tree/0.1.1"
+            },
+            "time": "2019-12-10T01:45:19+00:00"
+        },
+        {
+            "name": "freedsx/socket",
+            "version": "0.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FreeDSx/Socket.git",
+                "reference": "3a4949f39d87fe70a0fc838d47aaf0bf8c900c3e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FreeDSx/Socket/zipball/3a4949f39d87fe70a0fc838d47aaf0bf8c900c3e",
+                "reference": "3a4949f39d87fe70a0fc838d47aaf0bf8c900c3e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "require-dev": {
+                "freedsx/asn1": "^0.4.0",
+                "friends-of-phpspec/phpspec-code-coverage": "^4.3|^6.1",
+                "phpspec/phpspec": "^5.1|^6.1|^7.1",
+                "phpstan/phpstan": "^0.12"
+            },
+            "suggest": {
+                "ext-openssl": "For SSL/TLS support.",
+                "freedsx/asn1": "For ASN.1 based message queues."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FreeDSx\\Socket\\": "src/FreeDSx/Socket"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chad Sikorra",
+                    "email": "Chad.Sikorra@gmail.com"
+                }
+            ],
+            "description": "A simple socket library for FreeDSx",
+            "homepage": "https://github.com/FreeDSx/Socket",
+            "keywords": [
+                "Socket",
+                "tcp",
+                "udp"
+            ],
+            "support": {
+                "issues": "https://github.com/FreeDSx/Socket/issues",
+                "source": "https://github.com/FreeDSx/Socket/tree/0.5.2"
+            },
+            "time": "2021-12-31T22:39:06+00:00"
+        },
+        {
+            "name": "psr/log",
+            "version": "1.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
+                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/log/tree/1.1.4"
+            },
+            "time": "2021-05-03T11:20:27+00:00"
+        }
+    ],
     "packages-dev": [
         {
             "name": "christophwurst/nextcloud_testing",
@@ -1755,56 +2039,6 @@
                 "source": "https://github.com/php-fig/event-dispatcher/tree/1.0.0"
             },
             "time": "2019-01-08T18:20:26+00:00"
-        },
-        {
-            "name": "psr/log",
-            "version": "1.1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-fig/log.git",
-                "reference": "d49695b909c3b7628b6289db5479a1c204601f11"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/d49695b909c3b7628b6289db5479a1c204601f11",
-                "reference": "d49695b909c3b7628b6289db5479a1c204601f11",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.0"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.1.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Psr\\Log\\": "Psr/Log/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "PHP-FIG",
-                    "homepage": "https://www.php-fig.org/"
-                }
-            ],
-            "description": "Common interface for logging libraries",
-            "homepage": "https://github.com/php-fig/log",
-            "keywords": [
-                "log",
-                "psr",
-                "psr-3"
-            ],
-            "support": {
-                "source": "https://github.com/php-fig/log/tree/1.1.4"
-            },
-            "time": "2021-05-03T11:20:27+00:00"
         },
         {
             "name": "sebastian/cli-parser",
